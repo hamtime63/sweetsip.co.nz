@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f5f1ea;
+            color: #333;
+        }
+
+        header {
+            background: #4b2e2b;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #d4a373;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #4b2e2b;
+        }
+
+        .about {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        footer {
+            background: #4b2e2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>☕ Bean & Brew</h1>
+    <p>Fresh Coffee • Good Vibes • Local Roasts</p>
+    <a href="#menu" class="btn">View Menu</a>
+</header>
+
+<section class="container about">
+    <h2>Welcome</h2>
+    <p>
+        Serving handcrafted coffee and homemade treats every day.
+        Whether you're here for your morning espresso or an afternoon
+        latte, we have something for every coffee lover.
+    </p>
+</section>
+
+<section class="container" id="menu">
+    <h2 style="text-align:center; margin-bottom:30px;">
+        Our Favorites
+    </h2>
+
+    <div class="menu">
+
+        <div class="card">
+            <h3>Espresso</h3>
+            <p>Rich and bold single-shot espresso.</p>
+            <strong>$4.50</strong>
+        </div>
+
+        <div class="card">
+            <h3>Cappuccino</h3>
+            <p>Smooth espresso with steamed milk foam.</p>
+            <strong>$5.50</strong>
+        </div>
+
+        <div class="card">
+            <h3>Flat White</h3>
+            <p>A Kiwi classic made with velvety milk.</p>
+            <strong>$5.50</strong>
+        </div>
+
+        <div class="card">
+            <h3>Mocha</h3>
+            <p>Espresso blended with chocolate and milk.</p>
+            <strong>$6.00</strong>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Bean & Brew Coffee | Open Daily 7am - 4pm</p>
+</footer>
+
+</body>
+</html>
