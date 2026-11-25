@@ -1,141 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-NZ">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bean & Brew Coffee</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f5f1ea;
-            color: #333;
-        }
-
-        header {
-            background: #4b2e2b;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        header h1 {
-            font-size: 3rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background: #d4a373;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-
-        .menu {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,.1);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #4b2e2b;
-        }
-
-        .about {
-            text-align: center;
-            margin: 60px 0;
-        }
-
-        footer {
-            background: #4b2e2b;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff2b9">
+  <meta name="description" content="SweetSip — sip with love. Coffee made fresh, served with a little sweetness.">
+  <title>SweetSip — Sip with Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="SweetSip home">
+      <img src="assets/sweetsip-logo.jpeg" alt="SweetSip — Sip with Love">
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation">
+      <a href="#menu">Our coffee</a>
+      <a href="#about">Our story</a>
+      <a href="#find-us">Find us</a>
+      <a class="nav-cta" href="#contact">Get in touch</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>☕ Bean & Brew</h1>
-    <p>Fresh Coffee • Good Vibes • Local Roasts</p>
-    <a href="#menu" class="btn">View Menu</a>
-</header>
-
-<section class="container about">
-    <h2>Welcome</h2>
-    <p>
-        Serving handcrafted coffee and homemade treats every day.
-        Whether you're here for your morning espresso or an afternoon
-        latte, we have something for every coffee lover.
-    </p>
-</section>
-
-<section class="container" id="menu">
-    <h2 style="text-align:center; margin-bottom:30px;">
-        Our Favorites
-    </h2>
-
-    <div class="menu">
-
-        <div class="card">
-            <h3>Espresso</h3>
-            <p>Rich and bold single-shot espresso.</p>
-            <strong>$4.50</strong>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FRESH COFFEE • GOOD VIBES</p>
+        <h1>A little cup<br><span>of happiness.</span></h1>
+        <p class="intro">Good coffee, made with care and served with a little love. Come say hello and make your day a little sweeter.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#menu">See our coffee</a>
+          <a class="text-link" href="#find-us">Where to find us <span>→</span></a>
         </div>
-
-        <div class="card">
-            <h3>Cappuccino</h3>
-            <p>Smooth espresso with steamed milk foam.</p>
-            <strong>$5.50</strong>
+      </div>
+      <div class="hero-art">
+        <div class="sunburst"></div>
+        <div class="hero-logo-wrap">
+          <img src="assets/sweetsip-logo.jpeg" alt="SweetSip logo">
         </div>
+        <span class="sparkle sparkle-one">✳</span>
+        <span class="sparkle sparkle-two">✦</span>
+        <span class="little-note">sip with love</span>
+      </div>
+    </section>
 
-        <div class="card">
-            <h3>Flat White</h3>
-            <p>A Kiwi classic made with velvety milk.</p>
-            <strong>$5.50</strong>
-        </div>
+    <section class="ticker" aria-label="SweetSip message">
+      <div>MADE FRESH <span>✦</span> SIP WITH LOVE <span>✦</span> GOOD COFFEE, GOOD MOOD <span>✦</span> MADE FRESH <span>✦</span> SIP WITH LOVE <span>✦</span></div>
+    </section>
 
-        <div class="card">
-            <h3>Mocha</h3>
-            <p>Espresso blended with chocolate and milk.</p>
-            <strong>$6.00</strong>
-        </div>
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR DAILY LITTLE TREAT</p>
+        <h2>What's brewing?</h2>
+        <p>From your everyday favourite to something a little sweeter.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <div class="coffee-icon coffee-latte"><span></span></div>
+          <h3>Flat White</h3><p>Smooth espresso with silky steamed milk.</p><strong> Regular - $5.00</strong><br><strong>Large - $6.00</strong>
+        </article>
+        <article class="menu-card featured">
+          <div class="coffee-icon coffee-cappuccino"><span></span></div>
+          <h3>Cappuccino</h3><p>Rich espresso topped with a fluffy layer of foam.</p><strong>$5.50</strong>
+        </article>
+        <article class="menu-card">
+          <div class="coffee-icon coffee-mocha"><span></span></div>
+          <h3>Mocha</h3><p>A lovely mix of espresso, chocolate and milk.</p><strong>$5.50</strong>
+        </article>
+        <article class="menu-card">
+          <div class="coffee-icon coffee-longblack"><span></span></div>
+          <h3>Long Black</h3><p>Bold, full-flavoured espresso and hot water.</p><strong>$4.50</strong>
+        </article>
+      </div>
+      <p class="menu-footnote">Menu and prices are coming soon. Keep an eye out for updates.</p>
+    </section>
 
-    </div>
-</section>
+    <section class="about-section section-pad" id="about">
+      <div class="about-stamp">MADE<br>WITH<br>LOVE</div>
+      <div class="about-copy">
+        <p class="eyebrow">HELLO, COFFEE LOVER</p>
+        <h2>More than just<br>a morning coffee.</h2>
+        <p>SweetSip is all about good coffee, friendly faces and those little moments that make the day. We're getting ready to bring freshly made favourites to the neighbourhood.</p>
+        <a class="text-link" href="#contact">Come say hello <span>→</span></a>
+      </div>
+    </section>
 
-<footer>
-    <p>Bean & Brew Coffee | Open Daily 7am - 4pm</p>
-</footer>
+    <section class="find-section section-pad" id="find-us">
+      <div>
+        <p class="eyebrow">COME FIND US</p>
+        <h2>Your next coffee<br>is closer than you think.</h2>
+        <p>We're getting our spot sorted. Check back soon for our location and opening hours.</p>
+      </div>
+      <div class="location-card">
+        <div class="pin">⌖</div>
+        <h3>Find SweetSip</h3>
+        <p>Location coming soon</p>
+        <span class="hours-pill">Opening hours:<br>Mon - Fri 6am - 3pm<br>Sat & Sun Closed
+        </span>
+      </div>
+    </section>
 
+    <section class="contact-section section-pad" id="contact">
+      <p class="eyebrow">LET'S CHAT</p>
+      <h2>Say hello, we'd<br>love to hear from you.</h2>
+      <p>Questions, enquiries or just want to say hi?</p>
+      <a class="button button-light" href="mailto:hello@sweetsip.co.nz">hello@sweetsip.co.nz</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="#home" class="footer-brand">SweetSip<span>.</span></a>
+    <p>Sip with love.</p>
+    <small>© <span id="year"></span> SweetSip. All rights reserved.</small>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
